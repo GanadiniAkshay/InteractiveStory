@@ -5,11 +5,15 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import intigrent.com.interactivestory.R;
+import intigrent.com.interactivestory.model.Story;
 
 
 public class StoryActivity extends Activity {
 
     public static final String TAG = StoryActivity.class.getSimpleName();
+
+    private Story mStory = new Story();
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
